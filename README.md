@@ -7,7 +7,7 @@ After many years of using ytdl I managed to come up with this simple script that
 *Before running*
 
 Before installing, make sure you have:
-[[https://github.com/yt-dlp/yt-dlp]YT-DLP]
+[[https://github.com/yt-dlp/yt-dlp][YT-DLP]
 
 
 *To install*
