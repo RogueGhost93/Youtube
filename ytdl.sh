@@ -50,10 +50,10 @@ music 'Foreign' 'Oldies' 'Roy Orbinson' 'https://www.youtube.com/playlist?list=P
 ### MUSIC VIDEOS
 music_videos 'Domestic' 'Yugoslavia' 'Djordje Balasevic' 'https://www.youtube.com/watch?v=z62StmSvXgo' 'Concerts'
 ###################################################################################################################################
-### DOCUMENTARY FROM A SINGLE VIDEO
+### DOCUMENTARY AS A SERIES FROM A PLAYLIST
 documentary_playlist 'Economics' 'https://www.youtube.com/watch?v=DyV0OfU3-FU&list=PLE88E9ICdiphYjJkeeLL2O09eJoC8r7Dc' 'Hidden Secrets of Money'
 ###################################################################################################################################
-### DOCUMENTARY AS A SERIES FROM A PLAYLIST
+### DOCUMENTARY FROM A SINGLE VIDEO
 documentary_single 'Economics' 'https://www.youtube.com/watch?v=wdJFeSY8UVk' 'Best documentary ever'
 ###################################################################################################################################
 ### ARCHIVE OF AN ENTIRE CHANNEL
