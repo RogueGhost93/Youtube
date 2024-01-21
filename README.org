@@ -39,7 +39,7 @@ $ chmod +x ytdl.sh
 :PROPERTIES:
 :ID:       9e995141-b386-4962-9842-7209bedc5651
 :END:
-
+Additional instruction can be found in ytdl.sh file.
 #+begin_src
 # Open ytdl.sh in order to define your channels you would like to download.
 # You can also change any variable in ytdl.sh file such as download or config location.
