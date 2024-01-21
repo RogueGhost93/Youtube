@@ -17,13 +17,15 @@ $mkdir /home/$USER/Youtube
 $ cd Youtube
 $ git clone https://github.com/RogueGhost93/youtube-download
 $ chmod +x ytdl.sh
+#+end_src
 
 
 * Usage
-
+#+begin_src bash
 # Open ytdl.sh in order to define your channels you would like to download.
 # You can also change any variable in ytdl.sh file such as download or config location.
 $ cd /home/$USER/Youtube
 $ ./ytdl.sh
 #+end_src
+
 
