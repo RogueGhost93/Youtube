@@ -1,9 +1,12 @@
-#+title: Youtube Dowwnload script that will automatically orginize your downloads into a folder structure according to Video and Music Genres, Music Artist, Music Video types (Concerts, Live...) etc.
+#+title:
+
+Youtube Dowwnload script that will automatically orginize your downloads into a folder structure according to Video and Music Genres, Music Artist, Music Video types (Concerts, Live...) etc.
 
 * Description
 :PROPERTIES:
 :ID:       280135a0-2cff-4e93-8679-7d1a6d56b7b2
 :END:
+
 After many years of using ytdl I managed to come up with this simple script that will perfectly orginize all of my downloads into a desired folder structure. This is an alternative to software like youtube archivist, tubesync and the latest one I started using ytdl-sub which provides much more advanced usage of yt-dlp, but for noobs or just a simple download of youtube content this script is perfect. Enjoy!
 
 * Before running
