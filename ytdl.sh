@@ -10,11 +10,11 @@ log=$data_root/log.log
 #OPTIONS:
 echo "=========================================================================================================================================================="
 echo  "Option:  music will download only audio of the entire music playlist as Origin/Genre/Artist/Folder-like-'Concerts' if applied/songs.ext"
-echo  "Usage:   music 'Origin Strano|Domace' 'Genre' 'Artist' 'Link' 'Extra folder if desired e.g. Concerts/Live'"
+echo  "Usage:   music 'Origin Foreign|Domestic' 'Genre' 'Artist' 'Link' 'Extra folder if desired e.g. Concerts/Live'"
 echo  "Example: music 'Foreign' 'Oldies' 'Roy Orbinson' 'https://www.youtube.com/playlist?list=PLvPrczMM8gz3y1Iboy6CsZ432HjCWUQgR' 'Concerts'"
 echo "=========================================================================================================================================================="
 echo  "Option:  music_videos will download the entire music playlist as Origin/Genre/Artist/Folder-like-'Concerts' if applied/songs.ext"
-echo  "Usage:   music_videos 'Origin Strano|Domace' 'Genre' 'Artist' 'Link' 'Extra folder if desired e.g. Concerts/Live'"
+echo  "Usage:   music_videos 'Origin Foreign|Domestic' 'Genre' 'Artist' 'Link' 'Extra folder if desired e.g. Concerts/Live'"
 echo  "Example: music_videos 'Domestic' 'Yugoslavia' 'Djordje Balasevic' 'https://www.youtube.com/watch?v=z62StmSvXgo' 'Live'"
 echo "=========================================================================================================================================================="
 echo "Option:   archive will download the entire channel with the --match-filters applied. Organized as Genre/Channel/Playlist Name/videoname.ext"
