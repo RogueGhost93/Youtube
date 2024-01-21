@@ -1,0 +1,107 @@
+music() {
+    origin=$1
+    genre=$2
+    artist=$3
+    type=$5
+#     log=$data_root/Music/$origin/$genre/$artist/download-log.log
+    archive=$data_root/Music/$origin/$genre/$artist/download-archive.txt
+    additional_options="$global_yt_options -i --no-continue --no-overwrites  -x --audio-format mp3 --yes-playlist"
+    if [[ $type == "Concerts" ]]; then
+    output_syntax="$origin/"$genre"/"$artist"/$type/%(title)s.%(ext)s"
+    else
+    output_syntax="$origin/"$genre"/"$artist"/%(title)s.%(ext)s"
+    fi
+    echo "==================================================================================================================================" >> $log
+    echo "NEXT CHANNEL - Music - $origin - $genre - $artist" >> $log
+    echo "==================================================================================================================================" >> $log
+    yt-dlp --download-archive "$archive" $additional_options $4 -o "$data_root/Music/$output_syntax" >> $log 2>&1
+    unset origin
+    unset genre
+    unset artist
+    unset archive
+    unset channels
+    unset output_syntax
+    unset additional_options
+}
+music_videos() {
+    origin=$1
+    genre=$2
+    artist=$3
+    type=$5
+    archive=$data_root/Music-Videos/$origin/$genre/$artist/download-archive.txt
+    additional_options="$global_yt_options -vi --no-continue --no-overwrites --yes-playlist"
+    if [[ $type == "Concerts" ]]; then
+    output_syntax="$origin/"$genre"/"$artist"/$type/%(title)s.%(ext)s"
+    else
+    output_syntax="$origin/"$genre"/"$artist"/%(title)s.%(ext)s"
+    fi
+    echo "==================================================================================================================================" >> $log
+    echo "NEXT CHANNEL - Music - $origin - $genre - $artist" >> $log
+    echo "==================================================================================================================================" >> $log
+    yt-dlp --download-archive "$archive" $additional_options $4 -o "$data_root/Music-Videos/$output_syntax" >> $log 2>&1
+    unset origin
+    unset genre
+    unset artist
+    unset archive
+    unset channels
+    unset output_syntax
+    unset additional_options
+}
+documentary_playlist() {
+    genre=$1
+    channels=$2
+    archive=$data_root/Documentary/.$genre-download-archive.txt
+    additional_options="$global_yt_options --no-match-filters -vi --yes-playlist"
+    # Third argument is used for overriding the playlist name.
+    if [[ $3  ]]; then
+    output_syntax="$3/S%(upload_date>%Y)s-E%(playlist_index)s - %(title)s.%(ext)s"
+    else
+    output_syntax="%(playlist)s/S%(upload_date>%Y)s-E%(playlist_index)s - %(title)s.%(ext)s"
+    fi
+    echo "==================================================================================================================================" >> $log
+    echo "NEXT CHANNEL - $genre" >> $log
+    echo "==================================================================================================================================" >> $log
+    yt-dlp --config-location $config --download-archive $archive $additional_options "$channels" -o "$data_root/Documentary/$genre/$output_syntax" >> $log 2>&1
+    unset $genre
+    unset archive
+    unset channels
+    unset output_syntax
+    unset additional_options
+}
+documentary_single() {
+    genre=$1
+    channels=$2
+    # Third argument is used for overriding the documentary folder name.
+    archive=$data_root/Documentary/.$genre-download-archive.txt
+    additional_options="$global_yt_options --no-match-filters -vi --no-playlist"
+    if [[ $3  ]]; then
+    output_syntax="$3/%(title)s [%(resolution)s] (%(upload_date>%Y)s).%(ext)s"
+    else
+    output_syntax="%(title)s/%(title)s [%(resolution)s] (%(upload_date>%Y)s).%(ext)s"
+    fi
+    echo "==================================================================================================================================" >> $log
+    echo "NEXT CHANNEL - $genre" >> $log
+    echo "==================================================================================================================================" >> $log
+    yt-dlp --config-location $config --download-archive $archive $additional_options "$channels" -o "$data_root/Documentary/$genre/$output_syntax" >> $log 2>&1
+    unset $genre
+    unset archive
+    unset channels
+    unset output_syntax
+    unset additional_options
+}
+archive() {
+    genre=$1
+    channels=$2
+    archive=$data_root/Archive/.$genre-download-archive.txt
+    additional_options=$global_yt_options
+    output_syntax="%(channel)s/%(playlist)s/S%(upload_date>%Y)s-E%(upload_date>%m%d)s - [%(playlist_index)s] - %(title)s - [%(id)s].%(ext)s"
+    echo "==================================================================================================================================" >> $log
+    echo "NEXT CHANNEL - $genre" >> $log
+    echo "==================================================================================================================================" >> $log
+    yt-dlp --config-location $config --download-archive $archive $additional_options "$channels" -o "$data_root/Archive/$genre/$output_syntax" >> $log 2>&1
+    unset $genre
+    unset archive
+    unset channels
+    unset output_syntax
+    unset additional_options
+}
