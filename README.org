@@ -21,7 +21,7 @@ https://github.com/yt-dlp/yt-dlp
 
 
 
-* To run
+* To Install
 :PROPERTIES:
 :ID:       a0417c61-3fd8-40a0-9385-6c5aaed37337
 :END:
