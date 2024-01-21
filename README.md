@@ -1,6 +1,4 @@
-#+title:
-
-Youtube Dowwnload script that will automatically orginize your downloads into a folder structure according to Video and Music Genres, Music Artist, Music Video types (Concerts, Live...) etc.
+#+title: Youtube Dowwnload script that will automatically orginize your downloads into a folder structure according to Video and Music Genres, Music Artist, Music Video types (Concerts, Live...) etc.
 
 * Description
 :PROPERTIES:
@@ -33,6 +31,7 @@ $ chmod +x ytdl.sh
 :PROPERTIES:
 :ID:       9e995141-b386-4962-9842-7209bedc5651
 :END:
+
 # Open ytdl.sh in order to define your channels you would like to download.
 # You can also change any variable in ytdl.sh file such as download or config location.
 $ cd /home/$USER/Youtube
