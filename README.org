@@ -15,8 +15,8 @@ After many years of using ytdl I managed to come up with this simple script that
 :PROPERTIES:
 :ID:       01577a0a-852e-481a-b9b3-791b68594f96
 :END:
-Before installing, make sure you have:
-[[https://github.com/yt-dlp/yt-dlp][yt-dlp]
+Before installing, make sure you have yt-dlp:
+https://github.com/yt-dlp/yt-dlp
 
 
 
