@@ -27,7 +27,7 @@ https://github.com/yt-dlp/yt-dlp
 :END:
 
 #+begin_src bash
-$mkdir /home/$USER/Youtube
+$ mkdir /home/$USER/Youtube
 $ cd Youtube
 $ git clone https://github.com/RogueGhost93/youtube-download
 $ chmod +x ytdl.sh
