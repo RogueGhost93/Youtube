@@ -39,31 +39,6 @@ $ chmod +x ytdl.sh
 :PROPERTIES:
 :ID:       9e995141-b386-4962-9842-7209bedc5651
 :END:
-==========================================================================================================================================================
-Option:  "music" will download only audio of the entire music playlist as Origin/Genre/Artist/Folder-like-'Concerts' if applied/songs.ext
-Usage:   music 'Origin Strano|Domace' 'Genre' 'Artist' 'Link' 'Extra folder if desired e.g. Concerts/Live'
-Example: music 'Foreign' 'Oldies' 'Roy Orbinson' 'https://www.youtube.com/playlist?list=PLvPrczMM8gz3y1Iboy6CsZ432HjCWUQgR' 'Concerts'
-==========================================================================================================================================================
-Option:  "music_videos" will download the entire music playlist as Origin/Genre/Artist/Folder-like-'Concerts' if applied/songs.ext
-Usage:   music_videos 'Origin Strano|Domace' 'Genre' 'Artist' 'Link' 'Extra folder if desired e.g. Concerts/Live'
-Example: music_videos 'Domestic' 'Yugoslavia' 'Djordje Balasevic' 'https://www.youtube.com/watch?v=z62StmSvXgo' 'Live'
-==========================================================================================================================================================
-Option:   "archive" will download the entire channel with the --match-filters applied. Organized as Genre/Channel/Playlist Name/videoname.ext
-Usage:    archive 'GENRE' 'LINK'
-Example:  archive 'Networking' 'https://www.youtube.com/@homenetworkguy/playlists'
-==========================================================================================================================================================
-Option:  "documentary_single" will download a single documentary regardless if it belongs to a playlist or not; in form /Title/title.ext with an option to
-         override the folder title name with the 3rd argument like in example below to become /Overriden title/title.ext
-Usage:   documentary_single 'Genre' 'Link' 'Override Title'
-Example: documentary_single 'Economics' 'https://www.youtube.com/watch?v=wdJFeSY8UVk' 'Best documentary ever'
-==========================================================================================================================================================
-Option:  "documentary_playlist" will download the entire documentary playlist in form '/playlist-name/S(Year)-E(Playlist-index) - title.ext' with an option to
-         override the playlist name with the 3rd argument like in example below to become '/overriden-playlist-name/S(Year)-E(Playlist-index) - title.ext'
-Usage:   documentary_playlist 'Genre' 'Link' 'Override Playlist Name'
-Example: documentary_playlist 'Economics' 'https://www.youtube.com/watch?v=DyV0OfU3-FU&list=PLE88E9ICdiphYjJkeeLL2O09eJoC8r7Dc' 'Hidden Secrets of Money'
-==========================================================================================================================================================
-
-
 
 #+begin_src
 # Open ytdl.sh in order to define your channels you would like to download.
