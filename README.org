@@ -1,4 +1,4 @@
-#+title: Youtube Dowwnload script that will automatically orginize your downloads into a folder structure according to Video and Music Genres, Music Artist, Music Video types (Concerts, Live...) etc.
+#+title: Youtube Download script that will automatically orginize your downloads into a folder structure according to Video and Music Genres, Music Artist, Music Video types (Concerts, Live...) etc.
 
 
 * Description
